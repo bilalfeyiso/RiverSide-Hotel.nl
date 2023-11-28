@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <style>
+        /* CSS styles to improve the display and background */
+        body {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+
+
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #price {
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        footer .icon i{
+    margin: 20px 20px 20px 0;
+    color: #b6b7b9;
+    color:whitesmoke;
+    text-align: center;
+    text-indent: 5;
+    letter-spacing: 2em;
+        }
+        footer p{
+    color:black;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+    </style>
+    <title>RIVERSIDE HOTEL/reservation form</title>
+</head>
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <div class="container">
+        <h2>Reservation Form</h2>
+        <form action="mailto:bobfe83@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="room">Room Option:</label>
+                <select name="room" id="room" onchange="displayPrice()">
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Room with View">Room with View</option>
+                    <option value="Single Room">Single Room</option>
+                    <option value="Suites Room">Suites Room</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <span id="price">249 Euro</span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function displayPrice() {
+            var roomSelect = document.getElementById('room');
+            var price = document.getElementById('price');
+
+            switch (roomSelect.value) {
+                case 'Deluxe Room':
+                    price.textContent = '249 Euro';
+                    break;
+                case 'Room with View':
+                    price.textContent = '180 Euro';
+                    break;
+                case 'Single Room':
+                    price.textContent = '100 Euro';  // Replace with actual price
+                    break;
+                case 'Suites Room':
+                    price.textContent = '200 Euro';
+                    break;
+                default:
+                    price.textContent = 'N/A';
+            }
+        }
+    </script>
+    <footer>
+        <p><b>Choice your Payment method</b></p>
+        <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-paypal fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-google-wallet fa-2x" aria-hidden="true"></i>
+    </footer>
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script> 
+</body>
+</html>

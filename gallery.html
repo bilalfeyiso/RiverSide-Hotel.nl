@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiverSide Hotel/gallery</title>
+
+
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+
+    <header class="hd" style="background-color: rgb(182, 226, 233);">
+        <div class="content flex_space">
+            <div class="logo" style="background-image: url(logo-1.png/); border-radius: 20px; height: 70px; width: 60px; background-size: contain;">
+                <p class="name" style="margin-left: 80px; font-style: italic;"><b></b></p> 
+            </div>
+            <img src="logo.png/" alt="">
+            
+            <div class="navlinks">
+                
+                <ul id="menulist">
+                    
+                    <li><a href="RiverSide.html"><b>home</b></a></li>
+                    <li><a href="about.html" target=""><b>about</b></a></li>
+                    <li><a href="rooms.html" target=""><b>rooms</b></a></li>
+                    <li><a href="gallery.html" target="" class="active" style="color: #1f10ee;"><b>gallery</b></a></li>
+                    <li><a href="services.html" target=""><b>services</b></a></li>
+                    <li><a href="news.html" target=""><b>news</b></a></li>
+                    <li><a href="rooms.html"><i class="fa fa-search"></i></a></li>
+                    <li><a href="reserv.html" target=""><button class="primary-btn">BOOK NOW</button></a></li>
+                </ul>
+                <span class="fa fa-bars"> </span>
+            </div>
+        </div>
+     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight ="0px";
+
+
+        function menutoggle() {
+         if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "100vh";
+         } else {
+            menulist.style.maxHeight = "0px";  
+         }
+        }
+    </script>
+
+
+
+
+
+    <section class="gallery">
+        <div class="container top">
+          <div class="heading">
+              <h1>PHOTOS</h1>
+              <h2>Our Gallery</h2>
+              <p> <b>Each thoughtfully appointed room is equipped with modern amenities and a cozy seating area.</b></p>
+          </div>
+      </div>
+
+      
+
+      
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="items">
+                <div class="img" style="background-image: url(gallery-1.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+
+            <div class="items">
+                <div class="img" style="background-image: url(gallery-2.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+
+            
+            <div class="items">
+                <div class="img" style="background-image: url(banner-1nn.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+
+            
+            <div class="items">
+                <div class="img" style="background-image: url(gallery-3.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+            <div class="items">
+                <div class="img" style="background-image: url(banner-1n.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+            <div class="items">
+                <div class="img" style="background-image: url(gallery-4.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="items">
+                <div class="img" style="background-image: url(banner-2n.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+            <div class="items">
+                <div class="img" style="background-image: url(gallery-5.jpg); height: 251px; width: 255px; background-size: cover;">
+                   
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="img" style="background-image: url(banner-3n.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+            <div class="items">
+                <div class="img" style="background-image: url(gallery-6.jpg); height: 251px; width: 255px; background-size: cover;">
+                    
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                </div>
+            </div>
+
+
+
+            
+        </div>
+    </div>     
+            
+</section>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+<script>
+    $('.owl-carousel1').owlCarousel({
+    loop: true,
+    margin:  0,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    navText:["<i class = 'fa fa-chevron-left'>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0: {
+            items: 1
+        },
+        768:{
+            items: 4,
+           
+        },
+        1000:{
+            items: 6
+        }
+    }
+})
+   </script>
+    
+
+
+
+    <footer>
+
+
+
+        <!-- edit for some pages-->
+
+
+  <div class="container grid">
+    <div class="box">
+
+  <!--put logo photo here-->
+
+        <img src="image/" alt="">
+        <p><b>Follow up our social-media pages for our latest news and offer</b></p>
+
+        <div class="icon">
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+
+            <p><b>Download the App</b></p>
+            <i><a href="https://www.appstore.com"><ion-icon name="logo-apple-appstore" style="line-height: 100%; color: whitesmoke;"></ion-icon></a></i>
+            <i><a href="https://googleplaystore.com"><ion-icon name="logo-google-playstore" style="line-height: 32px; color: whitesmoke;"></ion-icon></a></i>
+        
+
+
+        </div>
+    </div>
+
+
+
+
+
+  <div class="box">
+    <h2>Links</h2>
+    <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>Contact Us</h2>
+    <p>We appreciate your choice to stay at RiverSide Hotel and want to ensure that your experience with us is nothing short of exceptional. If you have any concerns or inquiries, please do not hesitate to contact us. We are here to assist you in any way possible.</p>
+
+    <i class="fa fa-location-dot"></i>
+    <label>124 zous-straat, Amsterdam.</label><br>
+    <i class="fa fa-phone"></i>
+    <label>(+31)67835853</label><br>
+    <i class="fa fa-envelope"></i>
+    <label>info@RiverSide.NL</label>
+</div>
+</div>
+
+
+<div class="legal"></div>
+<p class="container">&copy; 2023 Copyright Holder All Rights Reserved.</p>
+
+
+</footer>
+
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+</html>
